@@ -1,0 +1,8 @@
+[deploy]
+healthcheckTimeout = 300
+restartPolicyMaxRetries = 8
+restartPolicyType = "on_failure"
+startCommand = "n8n start"
+
+[build]
+builder = "dockerfile"
