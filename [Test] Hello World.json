@@ -1,0 +1,51 @@
+{
+  "name": "[Test] Hello World",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "02478da8-0d41-4374-b40a-85fe92765975",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        208,
+        0
+      ],
+      "id": "87f5f7a0-55db-49bc-8d03-3cb50c4cefd5",
+      "name": "No Operation, do nothing"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "No Operation, do nothing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "3e8bd023-50ec-4818-924f-ffe592a8ec05",
+  "meta": {
+    "instanceId": "963ea970abf361438b51130ca197ecf925f367efd84e568e93e9f8755cddb7fb"
+  },
+  "id": "8pB244ZgTWgwvEhu",
+  "tags": []
+}
