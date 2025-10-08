@@ -1,12 +1,10 @@
 FROM n8nio/n8n:latest
 
+# Встановлюємо робочу директорію
 WORKDIR /home/node/.n8n
 
-# Set the correct user permissions
-USER node
-
-# Expose the default n8n port
+# Експортуємо порт
 EXPOSE 5678
 
-# Start n8n
-CMD ["n8n", "start"]
+# Використовуємо стандартну команду запуску
+CMD ["n8n"]
